@@ -215,3 +215,12 @@ void gameReset(){
   left_player=3;
   right_player=3;
 }
+
+void newGame(){
+  gameReset();
+  rp_score=0;
+  lp_score=0;
+  lcd.clear();
+  lcd.print("New Game");
+  delay(500);
+}
