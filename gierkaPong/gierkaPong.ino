@@ -47,6 +47,9 @@ void loop() {
     delay(500);
     gameReset();
   }
+  if(btn.buttonPressed(15)){ //[C] przycisk resetujacy całą grę
+    newGame();
+  }
   scoreboard.displayDigit(rp_score,0);
   scoreboard.displayDigit(lp_score,3);
   lcd.clear();
@@ -222,5 +225,5 @@ void newGame(){
   lp_score=0;
   lcd.clear();
   lcd.print("New Game");
-  delay(500);
+  delay(1500);
 }
